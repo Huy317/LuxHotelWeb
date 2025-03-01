@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+
+	<header>
+		<div class="border-bottom py-4">
+			<div class="container">
+				<div class="navbar navbar-expand-md">
+					<a href="#" class="navbar-brand mr-5"><img src="images/logo.png" class="img-fluid"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-navbar">
+						<i class="fa-solid fa-bars collapse-button p-2"></i>
+					</button>
+					<div class="collapse navbar-collapse" id="menu-navbar">
+						<ul class="nav w-100 d-block d-md-flex">
+							<li class="nav-item">
+								<a href="" class="nav-link">Home</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="" class="nav-link"  role="button" data-toggle="dropdown" aria-expanded="false" data-offset="0,10">Rooms</a>
+								<div class="dropdown-menu mt-2">
+									<a class="dropdown-item">
+										Room Booking List
+									</a>
+									<a class="dropdown-item">
+										Room Cards
+									</a>
+									<a class="dropdown-item">
+										Room Carousel
+									</a>
+									<a class="dropdown-item">
+										Room Single
+									</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Elements</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Pages</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Contact</a>
+							</li>
+							<li class=" nav-item ml-auto my-auto book-button d-md-inline-block d-none">
+								<a class="btn btn-lg px-5">BOOK NOW</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</header>
+
+
+	<main>
+		<div class="slider position-relative">
+			<div id="menu-slide" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="slider-item">
+							<img src="images/Slider 1.jpg" class="vh-100 w-100 position-relative">
+							<div class="overlay position-absolute h-100 w-100">
+								<div class="slider-content center">
+									<p class="text-center">The finest hotel near Panama Beach</p>
+									<h1 class="text-center mt-2">Luxury Times.</h1>
+									<h1 class="text-center mb-5">Bay & Beyond.</h1>
+									<div class="text-center explore-button mt-3">
+										<a href="" class="px-5 py-3 font-weight-bold">EXPLORE ROOMS</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="slider-item">
+							<img src="images/Slider 2.jpg" class="vh-100 w-100 position-relative">
+							<div class="overlay position-absolute h-100 w-100">
+								<div class="slider-content center">
+									<h1 class="text-center">Comfort & More.</h1>
+									<h1 class="text-center">Bay & Beyond.</h1>
+									<p class="text-center mb-5 mt-2">The finest hotel near Panama Beach</p>
+									<div class="text-center explore-button mt-3">
+										<a href="" class="px-5 py-3 font-weight-bold">EXPLORE ROOMS</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="menu-form position-absolute w-100 p-5">
+				<form class="w-100">
+					<div class="container">
+						<div class="row d-flex align-items-stretch">
+							<div class="col-md col-6 p-0">
+								<div class="form-input">
+									<input type="date" class="form-control rounded-left" name="arrivalDate" id="arrivalDate" value="" placeholder="Arrival Date">
+								</div>
+							</div>
+							<div class="col-md col-6 p-0">
+								<div class="form-input">
+									<input type="date" class="form-control" name="departureDate" id="departureDate" value="" placeholder="Departure Date">
+								</div>
+							</div>
+							<div class="col-md col-6 p-0">
+								<div class="form-input">
+									<select class="form-control" id="adult">
+										<option>Adult</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md col-6 p-0">
+								<div class="form-input">
+									<select class="form-control" id="children">
+										<option>Children</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md col-12 p-0">
+								<div class="form-input h-100">
+									<button type="button" id="check-availability-button" class="btn form-control rounded-right h-100">CHECK AVAILABILITY</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</form>
+			</div>
+		</div>		
+
+
+		<div class="hotel-bay py-5 border-bottom">
+			<div class="container my-5">
+				<div class="row">
+					<div class="col-md-6 col-12">
+						<img src="images/Hotel Bay.jpg" class="">
+					</div>
+					<div class="col-md-6 col-12">
+						<h2 class="old-standard-tt-regular">Every room tells a story.</h2>
+						<p class="font-weight-light">Make yourself comfortable in any of our serene guest rooms and spacious suites. Floor-to-ceiling soundproof windows afford striking views of the airport, the cityscape, or the Canadian Rockies. Choose one king-size or two queen Heavenly® Beds for a revitalizing night’s sleep, and refresh with the Heavenly Bath.</p>
+						<img src="images/signature.png">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="room-type">
+			<div class="container py-5 my-5">
+				<p class="text-center font-weight-light my-3 small-text">ACCOMODATION & COMFORT</p>
+				<h2 class="text-center old-standard-tt-regular">Eco-Inspired Lodging</h2>
+
+				<div class="room-slider">
+					<div id="roomSlider" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<!-- Standard -->
+							<div class="carousel-item active">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-4 col-12 p-2">
+											<div class="room-box rounded pb-5">
+												<img class="w-100 rounded-top" src="images/Room - Standard.jpg"></img>
+												<h5 class="p-2 old-standard-tt-regular">Standard Room</h5>
+												<p class="px-2 font-weight-light">Starting from $22.0/night</p>
+											</div>
+										</div>
+										<div class="col-md-4 col-12 p-2 d-md-block d-none">
+											<div class="room-box rounded pb-5">
+												<img class="w-100 rounded-top" src="images/Room - Beach Villa.jpg"></img>
+												<h5 class="p-2 old-standard-tt-regular">Beach Villa</h5>
+												<p class="px-2 font-weight-light">Starting from $120.0/night</p>
+											</div>
+
+										</div>
+										<div class="col-md-4 col-12 p-2 d-md-block d-none">
+											<div class="room-box rounded pb-5">
+												<img class="w-100 rounded-top" src="images/Room - Exclusive Suite.jpg"></img>
+												<h5 class="p-2 old-standard-tt-regular">Exclusive Suite</h5>
+												<p class="px-2 font-weight-light">Starting from $770.0/night</p>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Beach -->
+							<div class="carousel-item">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-4 col-12 p-2">
+											<div class="room-box rounded pb-5">
+												<img class="w-100 rounded-top" src="images/Room - Beach Villa.jpg"></img>
+												<h5 class="p-2 old-standard-tt-regular">Beach Villa</h5>
+												<p class="px-2 font-weight-light">Starting from $120.0/night</p>
+											</div>
+										</div>
+										<div class="col-md-4 col-12 p-2 d-md-block d-none">
+											<div class="room-box rounded pb-5">
+												<img class="w-100 rounded-top" src="images/Room - Exclusive Suite.jpg"></img>
+												<h5 class="p-2 old-standard-tt-regular">Exclusive Suite</h5>
+												<p class="px-2 font-weight-light">Starting from $770.0/night</p>
+											</div>
+
+										</div>
+										<div class="col-md-4 col-12 p-2 d-md-block d-none">
+											<div class="room-box rounded pb-5">
+												<img class="w-100 rounded-top" src="images/Room - Luxury Suite.jpg"></img>
+												<h5 class="p-2 old-standard-tt-regular">Luxury Suite</h5>
+												<p class="px-2 font-weight-light">Starting from $88.0/night</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Exclusive -->
+							<div class="carousel-item">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-4 col-12 p-2">
+											<div class="room-box rounded pb-5">
+												<img class="w-100 rounded-top" src="images/Room - Exclusive Suite.jpg"></img>
+												<h5 class="p-2 old-standard-tt-regular">Exclusive Suite</h5>
+												<p class="px-2 font-weight-light">Starting from $770.0/night</p>
+											</div>
+
+										</div>
+										<div class="col-md-4 col-12 p-2 d-md-block d-none">
+											<div class="room-box rounded pb-5">
+												<img class="w-100 rounded-top" src="images/Room - Luxury Suite.jpg"></img>
+												<h5 class="p-2 old-standard-tt-regular">Luxury Suite</h5>
+												<p class="px-2 font-weight-light">Starting from $88.0/night</p>
+											</div>
+										</div>
+										<div class="col-md-4 col-12 p-2 d-md-block d-none">
+											<div class="room-box rounded pb-5">
+												<img class="w-100 rounded-top" src="images/Room - Standard.jpg"></img>
+												<h5 class="p-2 old-standard-tt-regular">Standard Room</h5>
+												<p class="px-2 font-weight-light">Starting from $22.0/night</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Luxury -->
+							<div class="carousel-item">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-4 col-12 p-2">
+											<div class="room-box rounded pb-5">
+												<img class="w-100 rounded-top" src="images/Room - Luxury Suite.jpg"></img>
+												<h5 class="p-2 old-standard-tt-regular">Luxury Suite</h5>
+												<p class="px-2 font-weight-light">Starting from $88.0/night</p>
+											</div>
+										</div>
+										<div class="col-md-4 col-12 p-2 d-md-block d-none">
+											<div class="room-box rounded pb-5">
+												<img class="w-100 rounded-top" src="images/Room - Standard.jpg"></img>
+												<h5 class="p-2 old-standard-tt-regular">Standard Room</h5>
+												<p class="px-2 font-weight-light">Starting from $22.0/night</p>
+											</div>
+										</div>
+										<div class="col-md-4 col-12 p-2 d-md-block d-none">
+											<div class="room-box rounded pb-5">
+												<img class="w-100 rounded-top" src="images/Room - Beach Villa.jpg"></img>
+												<h5 class="p-2 old-standard-tt-regular">Beach Villa</h5>
+												<p class="px-2 font-weight-light">Starting from $120.0/night</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="button-group justify-content-center d-flex">
+							<a class="room-button-prev border rounded-left px-3 py-2" href="#roomSlider" role="button" data-slide="prev">
+								<i class="fa-solid fa-chevron-left"></i>
+
+							</a>
+							<a class="room-button-next border rounded-right px-3 py-2" href="#roomSlider" role="button" data-slide="next">
+								<i class="fa-solid fa-chevron-right"></i>
+							</a>
+						</div>
+						
+					</div>
+
+
+
+					<!-- TODO: add the slider and buttons -->
+				</div>
+			</div>
+		</div>
+		<div class="promo-group my-5 py-5">
+			<div id="promoSlider" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators promo-indicators">
+					<li data-target="#promoSlider" data-slide-to="0" class="active"></li>
+					<li data-target="#promoSlider" data-slide-to="1"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="promo-item position-relative">
+							<img class="d-block w-100" src="images/Spa like no other.jpg">
+							<div class="promo-overlay col-md-6 col-12 h-100 position-absolute"></div>
+							<div class="container position-absolute promo-content h-100">
+								<div class="row h-100">
+									<div class="col-md-6 col-12 vertical-center">
+										<h1 class="old-standard-tt-regular text-light">Spa Like Never Before</h1>
+										<p class="font-weight-light mt-2 mb-4">From the moment you step in, every sensation invites you to unwind. Take a journey of discovery and reconnect mind, body and spirit – guided by our experienced Aman therapists. We look forward to welcoming you.</p>
+										<a href="" class="btn px-5">BOOK NOW</a>
+
+										<div class="promo-button-group mt-5">
+											<a class="promo-button-prev rounded-left px-2 py-1" href="#promoSlider" role="button" data-slide="prev">
+												<i class="text-light fa-solid fa-chevron-left"></i>
+											</a>
+											<a class="promo-button-next rounded-right px-2 py-1" href="#promoSlider" role="button" data-slide="next">
+												<i class="text-light fa-solid fa-chevron-right"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>						
+					</div>
+					<div class="carousel-item">
+						<div class="promo-item position-relative">
+							<img class="d-block w-100" src="images/Exquisite Urban Experience.jpg">
+							<div class="promo-overlay col-md-6 col-12 h-100 position-absolute"></div>
+
+							<div class="container position-absolute promo-content h-100">
+								<div class="row h-100">
+									<div class="col-md-6 col-12 vertical-center">
+										<h1 class="old-standard-tt-regular text-light">Exquisite Urban Experience</h1>
+										<p class="font-weight-light mt-2 mb-4">From the moment you step in, every sensation invites you to unwind. Take a journey of discovery and reconnect mind, body and spirit – guided by our experienced Aman therapists. We look forward to welcoming you.</p>
+										<a href="" class="btn px-5">BOOK NOW</a>
+										<div class="promo-button-group mt-5">
+											<a class="promo-button-prev rounded-left px-2 py-1" href="#promoSlider" role="button" data-slide="prev">
+												<i class="text-light fa-solid fa-chevron-left"></i>
+											</a>
+											<a class="promo-button-next rounded-right px-2 py-1" href="#promoSlider" role="button" data-slide="next">
+												<i class="text-light fa-solid fa-chevron-right"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>	
+					</div>
+
+				</div>
+				<!-- <a class="carousel-control-prev" href="#promoSlider" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true">
+					</a>
+					<a class="carousel-control-next" href="#promoSlider" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true">
+						</a> -->
+						
+						
+					</div>
+
+				</div>
+
+
+				<div class="service-group py-5 my-5">
+					<div class="container">
+						<p class="text-center font-weight-light my-3 small-text grey-text">VACATION AT EASE</p>
+						<h2 class="text-center old-standard-tt-regular mb-5">Inspired Incentives</h2>
+						<div class="row d-flex align-items-stretch h-100">
+							<div class="col-md-3 col-6">
+								<div class="service-item service-1 border rounded py-5 px-3 h-100">
+									<img class="mx-auto d-block" src="images/plane.png">
+									<p class=" text-center p-2">Airport Pickup</p>
+									<p class="font-weight-light text-center font-size-90">We’ll pick up from airport while you comfy on your ride.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-6">
+								<div class="service-item service-2 border rounded py-5 px-3 h-100">
+									<img class="mx-auto d-block" src="images/breakfast.png">
+									<p class=" text-center p-2">Complementary Breakfast</p>
+									<p class="font-weight-light text-center font-size-90">Don’t spend a dime on breakfast. It’s on us, totally.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-6">
+								<div class="service-item service-3 border rounded py-5 px-3 h-100">
+									<img class="mx-auto d-block" src="images/tour-guide.png">
+									<p class=" text-center p-2">City Tour Guide</p>
+									<p class="font-weight-light text-center font-size-90">Explore city with our in-house tour guide. We got your back.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-6">
+								<div class="service-item service-4 border rounded py-5 px-3 h-100">
+									<img class="mx-auto d-block" src="images/bbq.png">
+									<p class=" text-center p-2">Beach BBQ Party</p>
+									<p class="font-weight-light text-center font-size-90">Kick back on the beach & cook up recipes from our masterchef.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="review-group py-5 my-5">
+						<div class="container">
+							<p class="text-center font-weight-light my-3 small-text grey-text text-uppercase">People Love Our Hotel</p>
+							<h2 class="text-center old-standard-tt-regular mb-5">What Others Say</h2>
+							<div class="row d-flex align-items-stretch h-100">
+								<div class="col-md-4 col-12">
+									<div class="review border rouded p-3 h-100">
+										<img class="rounded-circle mx-auto d-block py-3" src="images/mike-fleetwood.jpg">
+										<h5 class="text-center old-standard-tt-regular font-weight-bold py-3">Mike Fleetwood</h5>
+										<p class="font-weight-light text-center font-size-90">“TThis was the perfect hotel with the perfect location, perfect room; I couldn’t think of a more perfect trip!This was a great location as I was going to a conference at the Javitz center and it’s nearly a couple blocks walk.”</p>
+										<img class="mx-auto d-block py-3 mt-3" src="images/tripadvisor.png">
+									</div>
+								</div>
+								<div class="col-md-4 col-12">
+									<div class="review border rouded p-3 h-100">
+										<img class="rounded-circle mx-auto d-block py-3" src="images/joanna-roberts.jpg">
+										<h5 class="text-center old-standard-tt-regular font-weight-bold py-3">Joanna Roberts</h5>
+										<p class="font-weight-light text-center font-size-90">“We had an AMAZING experience at this hotel! Upon arrival, we each received a complimentary flute of champagne. Each member of the staff was incredibly friendly, welcoming, and acted as if we were the only guests at the hotel.”</p>
+										<img class="mx-auto d-block py-3 mt-3" src="images/booking.png">
+									</div>
+								</div>
+								<div class="col-md-4 col-12">
+									<div class="review border rouded p-3 h-100">
+										<img class="rounded-circle mx-auto d-block py-3" src="images/alex-johnson.jpg">
+										<h5 class="text-center old-standard-tt-regular font-weight-bold py-3">Alex Johnson</h5>
+										<p class="font-weight-light text-center font-size-90">“This is truly a great hotel. The staff is very friendly, helpful and experienced. I had a beautiful room with ‘city view’. That meant that I could view the Empire State Building and One World Trade Center at the same time.”</p>
+										<img class="mx-auto d-block py-3 mt-3" src="images/tripadvisor.png">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="news-group py-5 my-5">
+						<div class="container">
+							<p class="text-center font-weight-light my-3 small-text grey-text text-uppercase">What's Up</p>
+							<h2 class="text-center old-standard-tt-regular mb-5">Articles & News</h2>
+							<div class="row d-flex align-items-stretch h-100">
+								<div class="col-md-4 col-12">
+									<article class="border">
+										<img class="w-100" src="images/ouzciedl6sy-368x268.jpg">
+										<div class="news-content p-3">
+											<h5 class="mb-1">Like Thousand Rolling Stones</h5>
+											<p class="grey-text font-weight-light font-size-90">Bob Willams on <a href="#" class="colored-text">Lifestyle</a> </p>
+											<p class="font-weight-light font-size-90 py-3">While there’s nothing better than relaxing in a lounge chair on the beach, some days …</p>
+											<a href="#" class="font-size-90 font-weight-bold py-3 mt-3">READ MORE <i class="fa-solid fa-chevron-right"></i></a>
+										</div>
+									</article>
+								</div>
+								<div class="col-md-4 col-12">
+									<article class="border">
+										<img class="w-100" src="images/va0ymkiftpa-368x268.jpg">
+										<div class="news-content p-3">
+											<h5 class="mb-1">Staying in Style Forever</h5>
+											<p class="grey-text font-weight-light font-size-90">Bob Willams on <a href="#" class="colored-text">Lifestyle</a> </p>
+											<p class="font-weight-light font-size-90 py-3">While there’s nothing better than relaxing in a lounge chair on the beach, some days …</p>
+											<a href="#" class="font-size-90 font-weight-bold py-3 mt-3">READ MORE <i class="fa-solid fa-chevron-right"></i></a>
+										</div>
+									</article>
+								</div>
+								<div class="col-md-4 col-12">
+									<article class="border">
+										<img class="w-100" src="images/iStock_000002993908_Medium-1-1-368x268.jpg">
+										<div class="news-content p-3">
+											<h5 class="mb-1">Electric Feel And Of Other Things</h5>
+											<p class="grey-text font-weight-light font-size-90">Bob Willams on <a href="#" class="colored-text">Lifestyle</a> </p>
+											<p class="font-weight-light font-size-90 py-3">While there’s nothing better than relaxing in a lounge chair on the beach, some days …</p>
+											<a href="#" class="font-size-90 font-weight-bold py-3 mt-3">READ MORE <i class="fa-solid fa-chevron-right"></i></a>
+										</div>
+									</article>
+								</div>
+							</div>
+							<div class="d-flex">
+								<a href="#" class="colored-text text-center mx-auto my-5 p-2 view-more-button">VIEW MORE ARTICLES</a>
+							</div>
+
+						</div>
+					</div>
+				</main>
+
+				<footer>
+					<div class="container py-5">
+						<div class="row">
+							<div class="col-md-3 col-12">
+								<img class="my-3" src="images/logo.png">
+								<p class="grey-text font-size-90">Hotel Luxe is an all-in-one WordPress theme to make hotel websites of any kind. Make the hotel website you’ve always dreamt of with Hotel Luxe.</p>
+							</div>
+							<div class="col-md-3 col-12">
+								<p class="text-white my-3 px-2">CONTACT US</p>
+								<p class="grey-text p-2"><i class="fa-solid fa-location-dot"></i> 221 B, Baker Street, London</p>
+								<p class="grey-text p-2"><i class="fa-solid fa-phone"></i> +01-7458292</p>
+								<p class="grey-text p-2"><i class="fa-solid fa-envelope"></i> example@gmail.com</p>
+							</div>
+							<div class="col-md-3 col-12">
+								<p class="text-white my-3 px-2">CONTACT US</p>
+								<p class="p-2"><a class="grey-text" href="#">Home</a></p>
+								<p class="p-2"><a class="grey-text" href="#">Terms & Conditions</a></p>
+								<p class="p-2"><a class="grey-text" href="#">FAQ</a></p>
+								<p class="p-2"><a class="grey-text" href="#">Newsletter</a></p>
+							</div>
+							<div class="col-md-3 col-12">
+								<p class="text-white my-3 px-2">DON'T MISS ANY UPDATES</p>
+								<form>
+									<div class="input-mail position-relative mb-3">
+										<input class="w-100 p-3" type="email" name="email" id="email" placeholder="Your email" required>
+										<i class="mail-icon fa-regular fa-envelope position-absolute"></i>
+									</div>
+
+									<button type="submit" id="submit-mail" class="btn d-block w-100 p-3">SIGN UP NOW</button>
+
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="bg-black">
+						<p class="text-center py-3">&copy; Built with pride and caffeine by Huy. All rights reserved.</p>
+					</div>
+				</footer>
+
+				<script type="text/javascript">
+					// TODO: Check form
+					let submitButton = document.querySelector("#submit-mail")
+
+					submitButton.addEventListener("click",function () {
+						let mail = document.querySelector("#email").value;
+						if (mail == null || mail == ""){
+							alert("pls input mail");
+						}
+					});
+
+					let checkButton = document.querySelector("#check-availability-button");
+					let departureDate = document.querySelector("#departureDate");
+					let arrivalDate = document.querySelector("#arrivalDate");
+					let adult = document.querySelector("#adult");
+
+					checkButton.addEventListener("click", function(){
+						if (adult.value == "Adult"){
+							alert("Need at least 1 adult");
+						}
+						if (arrivalDate.value == "") {
+							alert("Please input arrival date");
+						}
+						if (departureDate.value == "") {
+							alert("Please input departure date");
+						}
+					});
+				</script>
+
+				<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+			</body>
+			</html>
