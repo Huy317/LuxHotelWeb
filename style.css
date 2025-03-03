@@ -15,6 +15,16 @@ a:hover, a:focus {
 	color: grey;
 	text-decoration: none;
 }
+.scroll-to-top {
+	position: fixed;
+	box-sizing: border-box;
+	right: 0;
+	bottom: 0;
+	font-size: 5vh;
+	color: grey;
+	z-index: 727;
+	margin-right: 10px;
+}
 .font-size-90 {
 	font-size: 90%;
 }
@@ -53,6 +63,9 @@ a:hover, a:focus {
 	background-color: #c7b39a;
 	color: white;
 	border-radius: 10%;
+}
+.dropdown:hover > .dropdown-menu {
+	display: block;
 }
 .slider-bg-1 {
 	background-image: url("images/Slider 1.jpg");

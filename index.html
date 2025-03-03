@@ -14,9 +14,10 @@
 </head>
 <body>
 	
-
+	<a name="top"></a>
+	<a href="#top" class="scroll-to-top "><i class="fa-solid fa-circle-up"></i></a>
 	<header>
-		<div class="border-bottom py-4">
+		<div class="border-bottom">
 			<div class="container">
 				<div class="navbar navbar-expand-md">
 					<a href="#" class="navbar-brand mr-5"><img src="images/logo.png" class="img-fluid"></a>
@@ -25,37 +26,51 @@
 					</button>
 					<div class="collapse navbar-collapse" id="menu-navbar">
 						<ul class="nav w-100 d-block d-md-flex">
-							<li class="nav-item">
-								<a href="" class="nav-link">Home</a>
+							<li class="nav-item dropdown">
+								<a href="" class="nav-link py-4"  role="button" data-toggle="dropdown">Home</a>
+								<div class="dropdown-menu">
+									<a href="" class="dropdown-item">
+										Home 1
+									</a>
+									<a href="" class="dropdown-item">
+										Home 2
+									</a>
+									<a href="" class="dropdown-item">
+										Home 3
+									</a>
+									<a href="" class="dropdown-item">
+										Home 4
+									</a>
+								</div>
 							</li>
 							<li class="nav-item dropdown">
-								<a href="" class="nav-link"  role="button" data-toggle="dropdown" aria-expanded="false" data-offset="0,10">Rooms</a>
-								<div class="dropdown-menu mt-2">
-									<a class="dropdown-item">
+								<a href="" class="nav-link py-4"  role="button" data-toggle="dropdown">Rooms</a>
+								<div class="dropdown-menu">
+									<a href="" class="dropdown-item">
 										Room Booking List
 									</a>
-									<a class="dropdown-item">
+									<a href="" class="dropdown-item">
 										Room Cards
 									</a>
-									<a class="dropdown-item">
+									<a href="" class="dropdown-item">
 										Room Carousel
 									</a>
-									<a class="dropdown-item">
+									<a href="" class="dropdown-item">
 										Room Single
 									</a>
 								</div>
 							</li>
 							<li class="nav-item">
-								<a href="" class="nav-link">Elements</a>
+								<a href="" class="nav-link py-4">Elements</a>
 							</li>
 							<li class="nav-item">
-								<a href="" class="nav-link">Pages</a>
+								<a href="" class="nav-link py-4">Pages</a>
 							</li>
 							<li class="nav-item">
-								<a href="" class="nav-link">Blog</a>
+								<a href="" class="nav-link py-4">Blog</a>
 							</li>
 							<li class="nav-item">
-								<a href="" class="nav-link">Contact</a>
+								<a href="" class="nav-link py-4">Contact</a>
 							</li>
 							<li class=" nav-item ml-auto my-auto book-button d-md-inline-block d-none">
 								<a class="btn btn-lg px-5">BOOK NOW</a>
@@ -175,7 +190,7 @@
 		<div class="room-type">
 			<div class="container py-5 my-5">
 				<p class="text-center font-weight-light my-3 small-text">ACCOMODATION & COMFORT</p>
-				<h2 class="text-center old-standard-tt-regular mb-3">Eco-Inspired Lodging</h2>
+				<h2 class="text-center old-standard-tt-regular">Eco-Inspired Lodging</h2>
 
 				<div class="room-slider">
 					<div id="roomSlider" class="carousel slide" data-ride="carousel">
