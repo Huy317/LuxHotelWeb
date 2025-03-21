@@ -24,6 +24,7 @@ a:hover, a:focus {
 	color: grey;
 	z-index: 727;
 	margin-right: 10px;
+	cursor: pointer;
 }
 .font-size-90 {
 	font-size: 90%;
@@ -204,6 +205,7 @@ footer img {
 	}
 	.slider-content {
 		width: 100%;
+		margin-top: 40px;
 	}
 	.menu-form {
 		background-color: #555555;
@@ -212,4 +214,14 @@ footer img {
 	.menu-form > .row > .col-6 {
 		margin-bottom: 10px;
 	}
+	.dropdown-toggle::after {
+		display: none;
+	}
+	.nav-item {
+		border-top: 1px solid #ccc;
+	}
+	.navbar-brand{
+
+	}
+
 }
