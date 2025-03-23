@@ -15,6 +15,13 @@ a:hover, a:focus {
 	color: grey;
 	text-decoration: none;
 }
+/*.dropdown-toggle::after {
+		display: none;
+}*/
+.dropdown-icon {
+	right: 0;
+	display: none;
+}
 .scroll-to-top {
 	position: fixed;
 	box-sizing: border-box;
@@ -214,8 +221,11 @@ footer img {
 	.menu-form > .row > .col-6 {
 		margin-bottom: 10px;
 	}
-	.dropdown-toggle::after {
-		display: none;
+/*	.dropdown-toggle::after {
+		display: inline-block;
+	}*/
+	.dropdown-icon {
+		display: inline-block;
 	}
 	.nav-item {
 		border-top: 1px solid #ccc;
